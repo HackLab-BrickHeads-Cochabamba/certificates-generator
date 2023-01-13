@@ -1,0 +1,54 @@
+[
+  {
+    "name": "Introducción a la Automatización de pruebas con Java/Selenium",
+    "date_start": "17/12/22", 
+    "date_end": null,
+    "duration": "3",
+    "instructor_name": "Denis Herrera Rojas",
+    "students": [
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo"
+    ]
+  },
+  {
+    "name": "Introducción a Linux, un paseo por los caminos del Software Libre",
+    "date_start": "28/12/22", 
+    "date_end": null,
+    "duration": "3",
+    "instructor_name": "Cristina Vargas M.",
+    "students": [
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo"
+    ]
+  },
+  {
+    "name": "Introducción al Ethical Hacking",
+    "date_start": "27/12/22", 
+    "date_end": null,
+    "duration": "2",
+    "instructor_name": "Gonzalo Nina Mamani",
+    "students": [
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo"
+    ]
+  },
+  {
+    "name": "Reversing de aplicaciones Android",
+    "date_start": "04/01/23", 
+    "date_end": null,
+    "duration": "2",
+    "instructor_name": "Cristhian Lima Saravia",
+    "students": [
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo",
+      "Enrique Demostrative Demo Demo"
+    ]
+  }
+]
