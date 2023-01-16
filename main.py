@@ -11,10 +11,11 @@ def sluglify(name):
   name = name.strip().split(' ')
   return '-'.join(word.strip() for word in name)
 
+# You need the certificate.svg file 
 with open('./data/certificate.svg','r') as file:
   certificate = file.read()
 
-with open('./data/data.json','r', encoding='utf-8') as file:
+with open('./data/data.example.json','r', encoding='utf-8') as file:
   data = file.read()
   data = json.loads(data)
   for course in data:
