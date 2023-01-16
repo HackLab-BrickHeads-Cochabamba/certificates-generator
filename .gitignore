@@ -1,3 +1,5 @@
 .venv
 out/*.svg
+out/*.pdf
 data/certificate.svg
+data/data.json

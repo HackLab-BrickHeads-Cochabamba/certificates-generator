@@ -1,6 +1,8 @@
 import json
 import copy
 from unidecode import unidecode
+import subprocess
+import pathlib
 
 certificate = None
 
@@ -33,12 +35,24 @@ with open('./data/data.json','r', encoding='utf-8') as file:
       last_template = copy.copy(template)
       last_template = last_template.replace('::NAME::', student)
       file_name = sluglify(student)
+      file_name = "{}_{}.svg".format(file_name, sluglify(course['name']).replace('/','-')).replace(',','').replace(' ','')
+      file_path = './out/{}'.format(file_name)
 
       with open(
-        './out/{}_{}.svg'
-        .format(file_name, sluglify(course['name']).replace('/','-'))
-        .replace(' ',''), 
+        file_path,
         'w'
       ) as file:
         file.write(last_template)
         file.close()
+      
+      new_file_name = file_name.replace('.svg', '')
+      args = [
+        'inkscape', 
+        '{}/out/{}'.format(pathlib.Path().resolve(),file_name),
+        '--export-area-drawing', 
+        '--batch-process', 
+        '--export-type=pdf',
+        '--export-filename=./out/{}.pdf'.format(new_file_name)
+      ]
+      
+      subprocess.call(args)
